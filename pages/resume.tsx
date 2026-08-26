@@ -45,6 +45,13 @@ export default function Resume() {
             <div className={styles.experienceItem}>
               <h4>Product Manager</h4>
               <p className={styles.date}>2021 - Present</p>
+              <p><strong>Featured Project: [Your Key Product Initiative]</strong></p>
+              <ul>
+                <li>[Key achievement or launch]</li>
+                <li>Impact: [Metrics — revenue, users, adoption, etc.]</li>
+                <li><a href="#" target="_blank" rel="noopener">Learn more →</a></li>
+              </ul>
+              <p><strong>Additional Highlights:</strong></p>
               <ul>
                 <li>Led cross-functional teams across engineering, design, and go-to-market</li>
                 <li>Increased product adoption by 150% through targeted feature launches</li>
@@ -56,6 +63,13 @@ export default function Resume() {
             <div className={styles.experienceItem}>
               <h4>Senior Engineer / Tech Lead</h4>
               <p className={styles.date}>2019 - 2021</p>
+              <p><strong>Featured Project: [Platform or API Launch]</strong></p>
+              <ul>
+                <li>[Key technical achievement]</li>
+                <li>Impact: [Metrics — performance, adoption, team growth, etc.]</li>
+                <li><a href="#" target="_blank" rel="noopener">Explore →</a></li>
+              </ul>
+              <p><strong>Additional Highlights:</strong></p>
               <ul>
                 <li>Architected scalable backend systems supporting 10M+ daily active users</li>
                 <li>Led team of 5 engineers on platform infrastructure</li>

@@ -7,7 +7,7 @@
 html,
 body {
   height: 100%;
-  color: #1f2937;
+  color: #2d3748;
   background-color: #ffffff;
 }
 
@@ -18,16 +18,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 code,
 pre {
   font-family: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo',
     monospace;
-  background-color: #f3f4f6;
+  background-color: #f7fafc;
   border-radius: 4px;
   padding: 2px 6px;
+  color: #2d3748;
 }
 
 pre {
@@ -45,7 +46,7 @@ h6 {
   margin-top: 24px;
   margin-bottom: 12px;
   font-weight: 600;
-  color: #111827;
+  color: #1a1a1a;
 }
 
 h1 {
@@ -73,14 +74,13 @@ p {
 }
 
 a {
-  color: #2563eb;
-  text-decoration: none;
+  color: #0c4a6e;
+  text-decoration: underline;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #1d4ed8;
-  text-decoration: underline;
+  color: #0a3852;
 }
 
 button,
@@ -102,7 +102,7 @@ li {
 }
 
 blockquote {
-  border-left: 4px solid #2563eb;
+  border-left: 4px solid #1e40af;
   padding-left: 16px;
   margin-left: 0;
   margin-bottom: 12px;
@@ -112,6 +112,6 @@ blockquote {
 
 hr {
   border: none;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid #e2e8f0;
   margin: 24px 0;
 }
