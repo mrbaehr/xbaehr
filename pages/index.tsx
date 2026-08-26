@@ -38,7 +38,7 @@ export default function Home() {
             </li>
             <li>
               <button type="button" className={styles.navLinkButton} onClick={openEmailClient}>
-                <span aria-hidden="true">🐦 </span>Get in touch
+                <span aria-hidden="true">🐦 </span>Mail
               </button>
             </li>
           </ul>
@@ -49,7 +49,7 @@ export default function Home() {
           <p className={styles.tagline}>Product manager, platform launcher; great dinner guest.</p>
           
           <section className={styles.quickLinks}>
-            <h2>Quick Links</h2>
+            <h2>Get in touch</h2>
             <ul>
               <li>
                 <a href="https://meatboundary.substack.com" target="_blank" rel="noopener noreferrer">
@@ -63,7 +63,7 @@ export default function Home() {
               </li>
               <li>
                 <button type="button" className={styles.quickLinkButton} onClick={openEmailClient}>
-                  <span aria-hidden="true">🐦 </span>Get in touch
+                  <span aria-hidden="true">🐦 </span>Mail
                 </button>
               </li>
             </ul>
