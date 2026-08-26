@@ -28,14 +28,6 @@ export default function Home() {
           <h1>Max Baehr</h1>
           <p className={styles.tagline}>Product manager, platform launcher; ex-cable subscriber; great dinner guest.</p>
           
-          <section className={styles.intro}>
-            <p>
-              I'm a product and platform-focused technologist with a background in building scalable systems 
-              and leading cross-functional teams. I'm passionate about clean design, thoughtful architecture, 
-              and shipping products that matter.
-            </p>
-          </section>
-
           <section className={styles.quickLinks}>
             <h2>Quick Links</h2>
             <ul>
