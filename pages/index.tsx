@@ -26,7 +26,7 @@ export default function Home() {
 
         <main className={styles.main}>
           <h1>Max Baehr</h1>
-          <p className={styles.tagline}>Product | Platform | Vibes</p>
+          <p className={styles.tagline}>Product manager, platform launcher; ex-cable subscriber; great dinner guest.</p>
           
           <section className={styles.intro}>
             <p>

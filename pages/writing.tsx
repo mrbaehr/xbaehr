@@ -28,35 +28,8 @@ export default function Writing() {
           <p className={styles.subtitle}>Articles, case studies, and technical insights</p>
 
           <section className={styles.content}>
-            <h2>Published Work</h2>
-            
-            <div className={styles.writingList}>
-              <article className={styles.writingItem}>
-                <h3>
-                  <a href="https://www.linkedin.com/in/mbaehr" target="_blank" rel="noopener">
-                    LinkedIn Articles
-                  </a>
-                </h3>
-                <p>Thoughts on product strategy, platform engineering, and technology leadership.</p>
-              </article>
-
-              <article className={styles.writingItem}>
-                <h3>
-                  <a href="https://substack.com" target="_blank" rel="noopener">
-                    Substack Newsletter
-                  </a>
-                </h3>
-                <p>Regular insights and commentary on the tech industry, product strategy, and platform engineering.</p>
-              </article>
-            </div>
-
-            <h2>Featured Case Studies</h2>
-            <p>
-              I've worked on a variety of product and platform initiatives. Specific details vary by NDA, 
-              but I'm happy to discuss my approach to product thinking, system design, and team dynamics in conversation.
-            </p>
-
-            <h2>Get in Touch</h2>
+            <p>I write on <a href="https://www.linkedin.com/in/mbaehr" target="_blank" rel="noopener">LinkedIn</a> and <a href="https://substack.com" target="_blank" rel="noopener">Substack</a>. For project deep-dives and case studies, check the featured work on my resume.</p>
+          </section>
             <p>
               Interested in collaborating or discussing ideas? Feel free to reach out:
             </p>
