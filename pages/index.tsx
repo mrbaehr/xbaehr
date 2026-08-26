@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Max Baehr | Product • Platform • Vibes</title>
+        <title>Max Baehr</title>
         <meta name="description" content="Product manager, platform thinker, tech enthusiast" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
@@ -18,47 +18,36 @@ export default function Home() {
             <Link href="/">Max Baehr</Link>
           </div>
           <ul className={styles.navLinks}>
-            <li><Link href="/">Info</Link></li>
-            <li><Link href="/writing">Writing Samples</Link></li>
-            <li><Link href="/resume">Resume / CV</Link></li>
+            <li><Link href="/writing">Writing</Link></li>
+            <li><Link href="/resume">Resume</Link></li>
           </ul>
         </nav>
 
         <main className={styles.main}>
           <h1>Max Baehr</h1>
           <p className={styles.tagline}>Product manager, platform launcher; ex-cable subscriber; great dinner guest.</p>
-          
-          <section className={styles.intro}>
-            <p>
-              I'm a product and platform-focused technologist with a background in building scalable systems 
-              and leading cross-functional teams. I'm passionate about clean design, thoughtful architecture, 
-              and shipping products that matter.
-            </p>
-          </section>
 
-          <section className={styles.quickLinks}>
-            <h2>Quick Links</h2>
-            <ul>
-              <li>
-                <Link href="/writing">Writing Samples</Link> — A collection of my published work and case studies
-              </li>
-              <li>
-                <Link href="/resume">Resume / CV</Link> — Download my full resume or view online
-              </li>
-              <li>
-                <Link href="https://www.linkedin.com/in/mbaehr" target="_blank" rel="noopener">
-                  LinkedIn Profile
-                </Link>
-              </li>
-              <li>
-                <Link href="mailto:m@xbaehr.com">Email: m@xbaehr.com</Link>
-              </li>
-            </ul>
-          </section>
+          <div className={styles.intro}>
+            <p>
+              I build products and platforms. Background in scalable systems, cross-functional teams, 
+              and shipping things that matter.
+            </p>
+          </div>
+
+          <ul className={styles.links}>
+            <li><Link href="/writing">Writing</Link></li>
+            <li><Link href="/resume">Resume</Link></li>
+            <li>
+              <a href="https://www.linkedin.com/in/mbaehr" target="_blank" rel="noopener">
+                LinkedIn
+              </a>
+            </li>
+            <li><a href="mailto:m@xbaehr.com">m@xbaehr.com</a></li>
+          </ul>
         </main>
 
         <footer className={styles.footer}>
-          <p>&copy; 2024 Max Baehr. All rights reserved.</p>
+          <p>Max Baehr</p>
         </footer>
       </div>
     </>

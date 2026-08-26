@@ -2,52 +2,48 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  max-width: 900px;
+  max-width: 620px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem 3rem;
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  gap: 2rem;
   margin-bottom: 4rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #e2e8f0;
 }
 
 .navBrand a {
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 0.95rem;
+  font-weight: 600;
   text-decoration: none;
-  color: #1a1a1a;
-  letter-spacing: -0.01em;
-  transition: color 0.2s ease;
+  color: #111111;
+  transition: color 0.15s ease;
 }
 
 .navBrand a:hover {
-  color: #0c4a6e;
+  color: #555555;
 }
 
 .navLinks {
   display: flex;
   list-style: none;
-  gap: 2.5rem;
+  gap: 1.75rem;
   margin: 0;
   padding: 0;
 }
 
 .navLinks a {
   text-decoration: none;
-  color: #4a5568;
-  font-weight: 500;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
+  color: #777777;
+  font-weight: 400;
+  font-size: 0.9rem;
+  transition: color 0.15s ease;
 }
 
 .navLinks a:hover {
-  color: #0c4a6e;
-  text-decoration: underline;
+  color: #111111;
 }
 
 .main {
@@ -56,77 +52,81 @@
 }
 
 .main h1 {
-  font-size: 3rem;
-  margin: 0 0 0.75rem 0;
-  color: #1a1a1a;
-  letter-spacing: -0.02em;
-  font-weight: 800;
-}
-
-.main h2 {
-  font-size: 1.75rem;
-  margin: 2.5rem 0 1.5rem 0;
-  color: #1a1a1a;
+  font-size: 1.6rem;
+  margin: 0 0 0.5rem 0;
+  color: #111111;
+  letter-spacing: -0.01em;
   font-weight: 700;
 }
 
-.main h3 {
-  font-size: 1.25rem;
-  margin: 2rem 0 1rem 0;
-  color: #1a1a1a;
+.main h2 {
+  font-size: 1.1rem;
+  margin: 2.5rem 0 0.75rem 0;
+  color: #111111;
   font-weight: 600;
 }
 
+.main h3 {
+  font-size: 0.95rem;
+  margin: 2rem 0 0.5rem 0;
+  color: #111111;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
 .subtitle {
-  font-size: 1.1rem;
-  color: #4a5568;
-  margin: 0 0 3rem 0;
+  font-size: 0.9rem;
+  color: #777777;
+  margin: 0 0 2.5rem 0;
   font-weight: 400;
 }
 
 .content {
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 .content p {
-  margin: 1.25rem 0;
-  color: #4a5568;
-  max-width: 800px;
+  margin: 1rem 0;
+  color: #444444;
+  font-size: 0.9rem;
 }
 
 .content a {
-  color: #0c4a6e;
-  text-decoration: underline;
-  font-weight: 500;
-  transition: color 0.2s ease;
+  color: #111111;
+  text-decoration: none;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 1px;
+  transition: border-color 0.15s ease;
 }
 
 .content a:hover {
-  color: #0a3852;
+  border-bottom-color: #111111;
 }
 
 .content ul,
 .content ol {
-  margin: 1.5rem 0;
-  padding-left: 2rem;
-  color: #4a5568;
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+  color: #444444;
 }
 
 .content li {
-  margin: 0.75rem 0;
-  line-height: 1.7;
+  margin: 0.4rem 0;
+  line-height: 1.6;
+  font-size: 0.9rem;
 }
 
 .writingList {
   display: grid;
   gap: 0;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .writingItem {
   border: none;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid #e2e8f0;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #eeeeee;
   background: transparent;
   border-radius: 0;
 }
@@ -136,188 +136,159 @@
 }
 
 .writingItem h3 {
-  margin: 0 0 0.75rem 0;
-  font-size: 1.1rem;
-  color: #1a1a1a;
+  margin: 0 0 0.4rem 0;
+  font-size: 0.9rem;
+  color: #111111;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 600;
 }
 
 .writingItem a {
-  color: #0c4a6e;
-  text-decoration: underline;
-  font-weight: 600;
-  transition: color 0.2s ease;
+  color: #111111;
+  text-decoration: none;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 1px;
+  transition: border-color 0.15s ease;
 }
 
 .writingItem a:hover {
-  color: #0a3852;
+  border-bottom-color: #111111;
 }
 
 .writingItem p {
   margin: 0;
-  color: #4a5568;
-  line-height: 1.6;
+  color: #777777;
+  line-height: 1.5;
+  font-size: 0.875rem;
 }
 
 .resumeHeader {
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .resumeHeader h2 {
-  margin: 0 0 0.75rem 0;
-  font-size: 1.75rem;
+  margin: 0 0 0.4rem 0;
+  font-size: 1.1rem;
 }
 
 .resumeHeader p {
-  margin: 0.5rem 0;
-  color: #4a5568;
-  font-size: 0.95rem;
+  margin: 0.3rem 0;
+  color: #777777;
+  font-size: 0.875rem;
+}
+
+.resumeHeader a {
+  color: #111111;
+  text-decoration: none;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 1px;
+}
+
+.resumeHeader a:hover {
+  border-bottom-color: #111111;
 }
 
 .placeholder {
-  color: #a0aec0;
+  color: #aaaaaa;
   font-style: italic;
-  padding: 1rem;
-  background: #f7fafc;
-  border-radius: 4px;
+  font-size: 0.875rem;
 }
 
 .experienceItem {
-  margin: 2.5rem 0;
-  padding-left: 0;
-  border-left: none;
+  margin: 1.75rem 0;
 }
 
 .experienceItem h4 {
-  margin: 0 0 0.25rem 0;
-  font-size: 1.05rem;
-  color: #1a1a1a;
-  font-weight: 700;
+  margin: 0 0 0.15rem 0;
+  font-size: 0.9rem;
+  color: #111111;
+  font-weight: 600;
+}
+
+.experienceItem a {
+  color: #111111;
+  text-decoration: none;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 1px;
+}
+
+.experienceItem a:hover {
+  border-bottom-color: #111111;
 }
 
 .experienceItem ul {
-  margin: 1rem 0 0 0;
-  padding-left: 1.5rem;
-  color: #4a5568;
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.25rem;
+  color: #444444;
 }
 
 .educationItem {
-  margin: 1.75rem 0;
-  padding: 0;
-  background: transparent;
-  border-radius: 0;
-  border: none;
+  margin: 1.25rem 0;
 }
 
 .educationItem h4 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.05rem;
-  color: #1a1a1a;
-  font-weight: 700;
+  margin: 0 0 0.15rem 0;
+  font-size: 0.9rem;
+  color: #111111;
+  font-weight: 600;
 }
 
 .educationItem p {
-  margin: 0.5rem 0;
-  color: #4a5568;
-  font-size: 0.95rem;
+  margin: 0.25rem 0;
+  color: #777777;
+  font-size: 0.875rem;
 }
 
 .skillsSection {
-  margin: 1.5rem 0;
-  padding: 0;
-  background: transparent;
-  border-radius: 0;
-  border-left: none;
+  margin: 1rem 0;
 }
 
 .skillsSection h4 {
-  margin: 0 0 0.75rem 0;
-  font-size: 1rem;
-  color: #1a1a1a;
-  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+  font-size: 0.8rem;
+  color: #999999;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .skillsSection p {
   margin: 0;
-  color: #4a5568;
-  line-height: 1.7;
+  color: #444444;
+  line-height: 1.6;
+  font-size: 0.875rem;
 }
 
 .date {
-  font-size: 0.875rem;
-  color: #a0aec0;
-  font-weight: 500;
-  margin: 0.25rem 0 0 0 !important;
+  font-size: 0.8rem;
+  color: #aaaaaa;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0 !important;
 }
 
 .footer {
-  text-align: center;
-  color: #a0aec0;
-  font-size: 0.875rem;
+  color: #bbbbbb;
+  font-size: 0.8rem;
   padding-top: 2rem;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid #eeeeee;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .container {
-    padding: 2rem 1.5rem;
+    padding: 2.5rem 1.25rem 2rem;
   }
 
   .nav {
-    flex-direction: column;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
     margin-bottom: 3rem;
   }
 
-  .navBrand a {
-    font-size: 1.1rem;
-  }
-
-  .navLinks {
-    gap: 1.5rem;
-    justify-content: center;
-  }
-
-  .navLinks a {
-    font-size: 0.9rem;
-  }
-
   .main h1 {
-    font-size: 2.25rem;
-  }
-
-  .main h2 {
-    font-size: 1.5rem;
-    margin: 2rem 0 1rem 0;
-  }
-
-  .main h3 {
-    font-size: 1.1rem;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .content p {
-    font-size: 0.95rem;
-  }
-
-  .writingItem {
-    padding: 1rem 0;
-  }
-
-  .experienceItem {
-    margin: 1.5rem 0;
-  }
-
-  .educationItem {
-    padding: 0;
-  }
-
-  .skillsSection {
-    padding: 0;
+    font-size: 1.4rem;
   }
 }
+

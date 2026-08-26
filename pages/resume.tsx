@@ -18,8 +18,8 @@ export default function Resume() {
           </div>
           <ul className={styles.navLinks}>
             <li><Link href="/">Info</Link></li>
-            <li><Link href="/writing">Writing Samples</Link></li>
-            <li><Link href="/resume">Resume / CV</Link></li>
+            <li><Link href="/writing">Writing</Link></li>
+            <li><Link href="/resume">Resume</Link></li>
           </ul>
         </nav>
 
@@ -123,7 +123,7 @@ export default function Resume() {
         </main>
 
         <footer className={styles.footer}>
-          <p>&copy; 2024 Max Baehr. All rights reserved.</p>
+          <p>Max Baehr</p>
         </footer>
       </div>
     </>

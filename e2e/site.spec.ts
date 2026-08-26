@@ -15,7 +15,7 @@ test.describe('xbaehr.com', () => {
 
     test('displays tagline', async ({ page }) => {
       await page.goto('/');
-      await expect(page.locator('text=Product | Platform | Vibes')).toBeVisible();
+      await expect(page.locator('text=platform launcher')).toBeVisible();
     });
 
     test('renders navigation menu', async ({ page }) => {
@@ -24,8 +24,7 @@ test.describe('xbaehr.com', () => {
       await expect(nav).toBeVisible();
       
       // Check for nav links
-      await expect(page.locator('nav a:has-text("Info")')).toBeVisible();
-      await expect(page.locator('nav a:has-text("Writing Samples")')).toBeVisible();
+      await expect(page.locator('nav a:has-text("Writing")')).toBeVisible();
       await expect(page.locator('nav a:has-text("Resume")')).toBeVisible();
     });
 
@@ -46,7 +45,7 @@ test.describe('xbaehr.com', () => {
   test.describe('Navigation', () => {
     test('navigates to Writing page', async ({ page }) => {
       await page.goto('/');
-      await page.click('a:has-text("Writing Samples")');
+      await page.click('nav a:has-text("Writing")');
       await expect(page).toHaveURL(/\/writing/);
       await expect(page.locator('h1')).toContainText('Writing Samples');
     });
