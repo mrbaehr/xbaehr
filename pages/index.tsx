@@ -4,6 +4,14 @@ import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const openEmailClient = () => {
+    const emailAddress = String.fromCharCode(
+      109, 64, 120, 98, 97, 101, 104, 114, 46, 99, 111, 109
+    );
+
+    window.location.href = `mailto:${emailAddress}`;
+  };
+
   return (
     <>
       <Head>
@@ -19,8 +27,22 @@ export default function Home() {
           </div>
           <ul className={styles.navLinks}>
             <li><Link href="/">Info</Link></li>
-            <li><Link href="/writing">Writing Samples</Link></li>
+            <li>
+              <a href="https://meatboundary.substack.com" target="_blank" rel="noopener noreferrer">
+                Substack
+              </a>
+            </li>
             <li><Link href="/resume">Resume / CV</Link></li>
+            <li>
+              <a href="https://www.linkedin.com/in/mbaehr" target="_blank" rel="noopener noreferrer">
+                <span aria-hidden="true">🤝 </span>LinkedIn
+              </a>
+            </li>
+            <li>
+              <button type="button" className={styles.navLinkButton} onClick={openEmailClient}>
+                <span aria-hidden="true">🐦 </span>Get in touch
+              </button>
+            </li>
           </ul>
         </nav>
 
@@ -32,18 +54,17 @@ export default function Home() {
             <h2>Quick Links</h2>
             <ul>
               <li>
-                <Link href="/writing">Writing Samples</Link> — A collection of my published work and case studies
-              </li>
-              <li>
                 <Link href="/resume">Resume / CV</Link> — Download my full resume or view online
               </li>
               <li>
                 <Link href="https://www.linkedin.com/in/mbaehr" target="_blank" rel="noopener">
-                  LinkedIn Profile
+                  <span aria-hidden="true">🤝 </span>LinkedIn
                 </Link>
               </li>
               <li>
-                <Link href="mailto:m@xbaehr.com">Email: m@xbaehr.com</Link>
+                <button type="button" className={styles.quickLinkButton} onClick={openEmailClient}>
+                  <span aria-hidden="true">🐦 </span>Get in touch
+                </button>
               </li>
             </ul>
           </section>
