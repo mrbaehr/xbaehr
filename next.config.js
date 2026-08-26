@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '',
-  trailingSlash: false,
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
