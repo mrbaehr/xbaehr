@@ -42,11 +42,11 @@ export default function Writing() {
 
               <article className={styles.writingItem}>
                 <h3>
-                  <a href="#" target="_blank" rel="noopener">
+                  <a href="https://substack.com" target="_blank" rel="noopener">
                     Substack Newsletter
                   </a>
                 </h3>
-                <p>Regular insights and commentary on the tech industry.</p>
+                <p>Regular insights and commentary on the tech industry, product strategy, and platform engineering.</p>
               </article>
             </div>
 

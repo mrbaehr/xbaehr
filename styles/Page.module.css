@@ -165,6 +165,68 @@
   border-radius: 4px;
 }
 
+.experienceItem {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  border-left: 3px solid #2563eb;
+}
+
+.experienceItem h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+.experienceItem ul {
+  margin: 0.75rem 0 0 0;
+  padding-left: 1.5rem;
+}
+
+.educationItem {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.educationItem h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+.educationItem p {
+  margin: 0.25rem 0;
+  color: #6b7280;
+}
+
+.skillsSection {
+  margin: 1.25rem 0;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 6px;
+  border-left: 3px solid #059669;
+}
+
+.skillsSection h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.skillsSection p {
+  margin: 0;
+  color: #374151;
+}
+
+.date {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  font-weight: 500;
+  margin: 0 !important;
+}
+
 .footer {
   text-align: center;
   color: #6b7280;
