@@ -2,9 +2,9 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 3rem 2rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -16,68 +16,91 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3rem;
-  padding-bottom: 1.5rem;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid #e5e7eb;
 }
 
 .navBrand a {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: 700;
   text-decoration: none;
   color: #111827;
+  letter-spacing: -0.01em;
 }
 
 .navBrand a:hover {
-  color: #374151;
+  color: #2563eb;
+  transition: color 0.2s ease;
 }
 
 .navLinks {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 2.5rem;
   margin: 0;
   padding: 0;
 }
 
 .navLinks a {
   text-decoration: none;
-  color: #374151;
+  color: #6b7280;
   font-weight: 500;
-  transition: color 0.2s;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  position: relative;
 }
 
 .navLinks a:hover {
-  color: #111827;
+  color: #2563eb;
+}
+
+.navLinks a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2563eb;
+  transition: width 0.2s ease;
+}
+
+.navLinks a:hover::after {
+  width: 100%;
 }
 
 .main {
   flex: 1;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .main h1 {
-  font-size: 2.5rem;
-  margin: 0 0 0.5rem 0;
+  font-size: 3rem;
+  margin: 0 0 0.75rem 0;
   color: #111827;
+  letter-spacing: -0.02em;
+  font-weight: 800;
 }
 
 .main h2 {
   font-size: 1.75rem;
-  margin: 2rem 0 1rem 0;
+  margin: 2.5rem 0 1.5rem 0;
   color: #111827;
+  font-weight: 700;
 }
 
 .main h3 {
   font-size: 1.25rem;
-  margin: 1.5rem 0 0.75rem 0;
+  margin: 2rem 0 1rem 0;
   color: #111827;
+  font-weight: 600;
 }
 
 .subtitle {
   font-size: 1.25rem;
   color: #6b7280;
-  margin: 0 0 2rem 0;
+  margin: 0 0 3rem 0;
   font-weight: 500;
 }
 
@@ -86,7 +109,7 @@
 }
 
 .content p {
-  margin: 1rem 0;
+  margin: 1.25rem 0;
   color: #374151;
   max-width: 800px;
 }
@@ -94,67 +117,86 @@
 .content a {
   color: #2563eb;
   text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 .content a:hover {
+  color: #1d4ed8;
   text-decoration: underline;
 }
 
 .content ul,
 .content ol {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   padding-left: 2rem;
   color: #374151;
 }
 
 .content li {
-  margin: 0.5rem 0;
+  margin: 0.75rem 0;
+  line-height: 1.7;
 }
 
 .writingList {
   display: grid;
-  gap: 2rem;
-  margin: 1.5rem 0;
+  gap: 1.5rem;
+  margin: 2rem 0;
 }
 
 .writingItem {
   border: 1px solid #e5e7eb;
-  padding: 1.5rem;
-  border-radius: 6px;
-  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.writingItem:hover {
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+  transform: translateY(-2px);
 }
 
 .writingItem h3 {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.25rem;
+  color: #111827;
 }
 
 .writingItem a {
   color: #2563eb;
   text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
 }
 
 .writingItem a:hover {
+  color: #1d4ed8;
   text-decoration: underline;
 }
 
 .writingItem p {
   margin: 0;
   color: #6b7280;
+  line-height: 1.6;
 }
 
 .resumeHeader {
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e5e7eb;
 }
 
 .resumeHeader h2 {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.75rem;
 }
 
 .resumeHeader p {
-  margin: 0.25rem 0;
+  margin: 0.5rem 0;
   color: #6b7280;
+  font-size: 0.95rem;
 }
 
 .placeholder {
@@ -166,7 +208,7 @@
 }
 
 .experienceItem {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   padding-left: 1.5rem;
   border-left: 3px solid #2563eb;
 }
@@ -175,49 +217,55 @@
   margin: 0 0 0.25rem 0;
   font-size: 1.1rem;
   color: #111827;
+  font-weight: 600;
 }
 
 .experienceItem ul {
-  margin: 0.75rem 0 0 0;
+  margin: 1rem 0 0 0;
   padding-left: 1.5rem;
+  color: #374151;
 }
 
 .educationItem {
-  margin: 1.5rem 0;
-  padding: 1.5rem;
+  margin: 1.75rem 0;
+  padding: 1.75rem;
   background: #f9fafb;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid #e5e7eb;
 }
 
 .educationItem h4 {
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 0.5rem 0;
   font-size: 1.1rem;
   color: #111827;
+  font-weight: 600;
 }
 
 .educationItem p {
-  margin: 0.25rem 0;
+  margin: 0.5rem 0;
   color: #6b7280;
+  font-size: 0.95rem;
 }
 
 .skillsSection {
-  margin: 1.25rem 0;
-  padding: 1rem;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
   background: #f9fafb;
-  border-radius: 6px;
+  border-radius: 8px;
   border-left: 3px solid #059669;
 }
 
 .skillsSection h4 {
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.75rem 0;
   font-size: 1rem;
   color: #111827;
+  font-weight: 600;
 }
 
 .skillsSection p {
   margin: 0;
   color: #374151;
+  line-height: 1.7;
 }
 
 .date {
@@ -229,7 +277,7 @@
 
 .footer {
   text-align: center;
-  color: #6b7280;
+  color: #9ca3af;
   font-size: 0.875rem;
   padding-top: 2rem;
   border-top: 1px solid #e5e7eb;
@@ -237,29 +285,67 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1.5rem;
   }
 
   .nav {
     flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .navBrand a {
+    font-size: 1.1rem;
   }
 
   .navLinks {
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
   }
 
+  .navLinks a {
+    font-size: 0.9rem;
+  }
+
   .main h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
+  }
+
+  .main h2 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
+  }
+
+  .main h3 {
+    font-size: 1.1rem;
   }
 
   .subtitle {
     font-size: 1rem;
+    margin-bottom: 2rem;
   }
 
   .content p {
     font-size: 0.95rem;
+  }
+
+  .writingList {
+    gap: 1rem;
+  }
+
+  .writingItem {
+    padding: 1.5rem;
+  }
+
+  .experienceItem {
+    margin: 1.5rem 0;
+  }
+
+  .educationItem {
+    padding: 1.25rem;
+  }
+
+  .skillsSection {
+    padding: 1.25rem;
   }
 }
