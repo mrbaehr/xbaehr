@@ -29,7 +29,8 @@ export default function Writing() {
 
           <section className={styles.content}>
             <p>I write on <a href="https://www.linkedin.com/in/mbaehr" target="_blank" rel="noopener">LinkedIn</a> and <a href="https://substack.com" target="_blank" rel="noopener">Substack</a>. For project deep-dives and case studies, check the featured work on my resume.</p>
-          </section>
+
+            <h2>Get in Touch</h2>
             <p>
               Interested in collaborating or discussing ideas? Feel free to reach out:
             </p>
