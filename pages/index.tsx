@@ -26,16 +26,14 @@ export default function Home() {
             <Link href="/">Max Baehr</Link>
           </div>
           <ul className={styles.navLinks}>
-            <li><Link href="/">Info</Link></li>
             <li>
               <a href="https://meatboundary.substack.com" target="_blank" rel="noopener noreferrer">
-                Substack
+                <span aria-hidden="true">🤝 </span>Substack
               </a>
             </li>
-            <li><Link href="/resume">Resume / CV</Link></li>
             <li>
               <a href="https://www.linkedin.com/in/mbaehr" target="_blank" rel="noopener noreferrer">
-                <span aria-hidden="true">🤝 </span>LinkedIn
+                <span aria-hidden="true">🖇️ </span>LinkedIn
               </a>
             </li>
             <li>
@@ -58,7 +56,7 @@ export default function Home() {
               </li>
               <li>
                 <Link href="https://www.linkedin.com/in/mbaehr" target="_blank" rel="noopener">
-                  <span aria-hidden="true">🤝 </span>LinkedIn
+                  <span aria-hidden="true">🖇️ </span>LinkedIn
                 </Link>
               </li>
               <li>
