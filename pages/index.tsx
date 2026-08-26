@@ -52,12 +52,14 @@ export default function Home() {
             <h2>Quick Links</h2>
             <ul>
               <li>
-                <Link href="/resume">Resume / CV</Link> — Download my full resume or view online
+                <a href="https://meatboundary.substack.com" target="_blank" rel="noopener noreferrer">
+                  <span aria-hidden="true">🤝 </span>Substack
+                </a>
               </li>
               <li>
-                <Link href="https://www.linkedin.com/in/mbaehr" target="_blank" rel="noopener">
+                <a href="https://www.linkedin.com/in/mbaehr" target="_blank" rel="noopener noreferrer">
                   <span aria-hidden="true">🖇️ </span>LinkedIn
-                </Link>
+                </a>
               </li>
               <li>
                 <button type="button" className={styles.quickLinkButton} onClick={openEmailClient}>
