@@ -102,7 +102,7 @@ li {
 }
 
 blockquote {
-  border-left: 4px solid #1e40af;
+  border-left: 1px solid #1e40af;
   padding-left: 16px;
   margin-left: 0;
   margin-bottom: 12px;
@@ -122,7 +122,7 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-[aria-hidden="true"] {
+span[aria-hidden="true"] {
   display: none;
 }
 
