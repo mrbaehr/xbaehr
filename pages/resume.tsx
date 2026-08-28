@@ -29,7 +29,7 @@ export default function Resume() {
           <section className={styles.content}>
             <div className={styles.resumeHeader}>
               <h2>Max Baehr</h2>
-              <p>Product Manager | Platform Engineer | Technology Leader</p>
+              <p>Product Leader | Platform Builder</p>
               <p><Link href="mailto:m@xbaehr.com">m@xbaehr.com</Link> | <Link href="https://www.linkedin.com/in/mbaehr" target="_blank" rel="noopener">LinkedIn</Link></p>
             </div>
 
