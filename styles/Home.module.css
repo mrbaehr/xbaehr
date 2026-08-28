@@ -31,13 +31,16 @@
 
 .navLinks {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   list-style: none;
   gap: 2.5rem;
   margin: 0;
   padding: 0;
 }
 
-.navLinks a {
+.navLinks a,
+.navLinkButton {
   text-decoration: none;
   color: #4a5568;
   font-weight: 500;
@@ -45,7 +48,16 @@
   transition: color 0.2s ease;
 }
 
-.navLinks a:hover {
+.navLinkButton {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+}
+
+.navLinks a:hover,
+.navLinkButton:hover {
   color: #0c4a6e;
   text-decoration: underline;
 }
@@ -64,12 +76,12 @@
 }
 
 .tagline {
-  font-size: 1.1rem;
-  color: #4a5568;
+  font-size: 1.5rem;
+  color: #1a1a1a;
   margin: 0 0 3rem 0;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: -0.005em;
-  line-height: 1.7;
+  line-height: 1.4;
 }
 
 .intro {
@@ -103,15 +115,26 @@
   padding: 0;
 }
 
-.quickLinks a {
+.quickLinks a,
+.quickLinkButton {
   color: #0c4a6e;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
-.quickLinks a:hover {
+.quickLinkButton {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+.quickLinks a:hover,
+.quickLinkButton:hover {
   color: #0a3852;
+  text-decoration: underline;
 }
 
 .footer {
@@ -138,7 +161,7 @@
   }
 
   .navLinks {
-    gap: 1.5rem;
+    gap: 1rem;
     justify-content: center;
   }
 
