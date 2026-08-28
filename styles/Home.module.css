@@ -118,7 +118,7 @@
 .quickLinks a,
 .quickLinkButton {
   color: #0c4a6e;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
