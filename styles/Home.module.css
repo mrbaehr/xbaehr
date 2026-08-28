@@ -145,6 +145,117 @@
   border-top: 1px solid #e2e8f0;
 }
 
+.container {
+  max-width: 1240px;
+  padding: 2.5rem 3rem;
+}
+
+.nav {
+  border-bottom: 1px solid #294555;
+  margin-bottom: clamp(5rem, 12vw, 10rem);
+  padding-bottom: 1.25rem;
+}
+
+.navBrand a {
+  color: #f7fbfc;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+}
+
+.navLinks {
+  gap: 1.5rem;
+}
+
+.navLinks a,
+.navLinkButton {
+  color: #b6c8cf;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.navLinks a:hover,
+.navLinkButton:hover {
+  color: #83d4cb;
+}
+
+.main {
+  margin-bottom: 9rem;
+  max-width: 72ch;
+}
+
+.main h1 {
+  color: #f7fbfc;
+  font-size: clamp(4rem, 10vw, 8rem);
+  letter-spacing: -0.065em;
+  line-height: 0.84;
+  max-width: 7ch;
+}
+
+.tagline {
+  color: #83d4cb;
+  font-size: clamp(1.25rem, 2.2vw, 1.85rem);
+  font-weight: 500;
+  margin-top: 2rem;
+  max-width: 34ch;
+}
+
+.intro {
+  color: #c7d4d8;
+  font-size: 1.1rem;
+  line-height: 1.85;
+  margin-top: 5rem;
+  max-width: 62ch;
+}
+
+.intro::before {
+  color: #e6a85b;
+  content: "—";
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.intro a,
+.quickLinks a,
+.quickLinkButton {
+  color: #83d4cb;
+  text-decoration-color: rgba(131, 212, 203, 0.5);
+  text-underline-offset: 0.22em;
+}
+
+.quickLinks {
+  border-top: 1px solid #294555;
+  margin-top: 6rem;
+  padding-top: 2.5rem;
+}
+
+.quickLinks h2 {
+  color: #f7fbfc;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.quickLinks li {
+  margin: 1rem 0;
+}
+
+.footer {
+  border-top-color: #294555;
+  color: #839ba5;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1.5rem;
+  }
+
+  .main h1 {
+    font-size: clamp(3.8rem, 20vw, 6rem);
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 2rem 1.5rem;
