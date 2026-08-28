@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { ThemeSwitcher } from '../components/ThemeSwitcher';
 import styles from '../styles/Page.module.css';
 
 export default function Writing() {
@@ -21,6 +22,7 @@ export default function Writing() {
             <li><Link href="/writing">Writing Samples</Link></li>
             <li><Link href="/resume">Resume / CV</Link></li>
           </ul>
+          <ThemeSwitcher />
         </nav>
 
         <main className={styles.main}>
