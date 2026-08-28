@@ -87,10 +87,15 @@
 .intro {
   margin: 3rem 0;
   padding: 0;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #4a5568;
   max-width: 700px;
+}
+
+.intro h3 {
+  margin: 0;
+  color: #4a5568;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
 .quickLinks {
