@@ -47,7 +47,24 @@ export default function Home() {
         <main className={styles.main}>
           <h1>Max Baehr</h1>
           <p className={styles.tagline}>Product manager, platform launcher; great dinner guest.</p>
-          
+
+          <section className={styles.intro}>
+            <p>
+              🪴 I'm a PM and builder with over 15 years of experience spanning advertising, martech, video
+              workflow, devtools, and builder platforms; SMB to Enterprise deployments. I enjoy reading,{' '}
+              <a href="https://meatboundary.substack.com/" target="_blank" rel="noopener noreferrer">writing</a>,
+              {' '}running, the NYTXW, and gardening. I recently built and launched an{' '}
+              <a
+                href="https://apps.apple.com/us/app/proplifting/id6761067409"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                iOS app
+              </a>
+              , which worked pretty well until I throttled my AI keys and stopped paying for hosting.
+            </p>
+          </section>
+
           <section className={styles.quickLinks}>
             <h2>Get in touch</h2>
             <ul>
