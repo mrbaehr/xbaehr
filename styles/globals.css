@@ -183,7 +183,7 @@ button:focus-visible {
   }
 
   html[data-theme='light'] a {
-    color: #006b66;
+      color: #00514f;
   }
 
   html[data-theme='light'] ::selection {
@@ -196,65 +196,104 @@ button:focus-visible {
     outline-color: #b44922;
   }
 
-  .themeSwitcher {
+  .themeMenu {
     align-items: center;
     background: #172633;
     border: 1px solid #416170;
-    bottom: 1.25rem;
-    display: flex;
-    gap: 0.2rem;
-    padding: 0.25rem;
-    position: fixed;
-    right: 1.25rem;
-    z-index: 10;
+    position: relative;
   }
 
-  .themeSwitcherButton {
+  .themeMenu summary {
+    align-items: center;
     background: transparent;
     border: 0;
     color: #b6c8cf;
     cursor: pointer;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.07em;
-    padding: 0.5rem 0.6rem;
-    text-transform: uppercase;
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    list-style: none;
+    width: 2rem;
     transition: background-color 160ms ease-out, color 160ms ease-out;
   }
 
-  .themeSwitcherButton:hover {
+  .themeMenu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .themeMenu summary:hover {
     color: #f7fbfc;
   }
 
-  .themeSwitcherButton[aria-pressed='true'] {
+  .themeMenu summary svg {
+    fill: none;
+    height: 1rem;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.75;
+    width: 1rem;
+  }
+
+  .themeMenuOptions {
+    background: #172633;
+    border: 1px solid #416170;
+    display: grid;
+    gap: 0.15rem;
+    padding: 0.25rem;
+    position: absolute;
+    right: -1px;
+    top: calc(100% + 0.5rem);
+    width: 6rem;
+  }
+
+  .themeMenu:not([open]) .themeMenuOptions {
+    display: none;
+  }
+
+  .themeMenuOptions button {
+    background: transparent;
+    border: 0;
+    color: #b6c8cf;
+    cursor: pointer;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    padding: 0.5rem;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .themeMenuOptions button:hover,
+  .themeMenuOptions button[aria-pressed='true'] {
     background: #83d4cb;
     color: #101923;
   }
 
-  html[data-theme='light'] .themeSwitcher {
+  html[data-theme='light'] .themeMenu {
     background: #e7edf0;
     border-color: #b7c5c8;
   }
 
-  html[data-theme='light'] .themeSwitcherButton {
-    color: #516873;
+  html[data-theme='light'] .themeMenu summary,
+  html[data-theme='light'] .themeMenuOptions button {
+    color: #2c3f49;
   }
 
-  html[data-theme='light'] .themeSwitcherButton:hover {
+  html[data-theme='light'] .themeMenu summary:hover {
     color: #18242c;
   }
 
-  html[data-theme='light'] .themeSwitcherButton[aria-pressed='true'] {
-    background: #006b66;
-    color: #f4f5f2;
+  html[data-theme='light'] .themeMenuOptions {
+    background: #e7edf0;
+    border-color: #b7c5c8;
   }
 
-  @media (max-width: 768px) {
-    .themeSwitcher {
-      bottom: 1rem;
-      right: 1rem;
-    }
-}
+  html[data-theme='light'] .themeMenuOptions button:hover,
+  html[data-theme='light'] .themeMenuOptions button[aria-pressed='true'] {
+    background: #00514f;
+    color: #f4f5f2;
+  }
 
 hr {
   border: none;

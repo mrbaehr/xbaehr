@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { ThemeSwitcher } from '../components/ThemeSwitcher';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -42,6 +43,7 @@ export default function Home() {
               </button>
             </li>
           </ul>
+          <ThemeSwitcher />
         </nav>
 
         <main className={styles.main}>
