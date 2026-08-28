@@ -134,6 +134,7 @@
 .quickLinks a:hover,
 .quickLinkButton:hover {
   color: #0a3852;
+  text-decoration: underline;
 }
 
 .footer {
