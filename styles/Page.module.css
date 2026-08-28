@@ -418,3 +418,54 @@
     padding: 0;
   }
 }
+
+:global(html[data-theme='light']) .nav,
+:global(html[data-theme='light']) .main h2,
+:global(html[data-theme='light']) .writingItem,
+:global(html[data-theme='light']) .resumeHeader,
+:global(html[data-theme='light']) .footer {
+  border-color: #b7c5c8;
+}
+
+:global(html[data-theme='light']) .navBrand a,
+:global(html[data-theme='light']) .main h1,
+:global(html[data-theme='light']) .main h3,
+:global(html[data-theme='light']) .resumeHeader h2,
+:global(html[data-theme='light']) .writingItem h3,
+:global(html[data-theme='light']) .experienceItem h4,
+:global(html[data-theme='light']) .educationItem h4,
+:global(html[data-theme='light']) .skillsSection h4 {
+  color: #18242c;
+}
+
+:global(html[data-theme='light']) .navLinks a,
+:global(html[data-theme='light']) .footer {
+  color: #516873;
+}
+
+:global(html[data-theme='light']) .main h2,
+:global(html[data-theme='light']) .content a,
+:global(html[data-theme='light']) .writingItem a {
+  color: #006b66;
+}
+
+:global(html[data-theme='light']) .main h3 {
+  color: #b44922;
+}
+
+:global(html[data-theme='light']) .subtitle,
+:global(html[data-theme='light']) .content p,
+:global(html[data-theme='light']) .content ul,
+:global(html[data-theme='light']) .content li,
+:global(html[data-theme='light']) .resumeHeader p,
+:global(html[data-theme='light']) .writingItem p,
+:global(html[data-theme='light']) .educationItem p,
+:global(html[data-theme='light']) .skillsSection p,
+:global(html[data-theme='light']) .date {
+  color: #3e515b !important;
+}
+
+:global(html[data-theme='light']) .placeholder {
+  background: #e7edf0;
+  color: #516873;
+}

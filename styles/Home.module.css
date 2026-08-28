@@ -298,3 +298,41 @@
     margin: 1rem 0;
   }
 }
+
+:global(html[data-theme='light']) .nav,
+:global(html[data-theme='light']) .quickLinks,
+:global(html[data-theme='light']) .footer {
+  border-color: #b7c5c8;
+}
+
+:global(html[data-theme='light']) .navBrand a,
+:global(html[data-theme='light']) .main h1,
+:global(html[data-theme='light']) .quickLinks h2 {
+  color: #18242c;
+}
+
+:global(html[data-theme='light']) .navLinks a,
+:global(html[data-theme='light']) .navLinkButton,
+:global(html[data-theme='light']) .footer {
+  color: #516873;
+}
+
+:global(html[data-theme='light']) .navLinks a:hover,
+:global(html[data-theme='light']) .navLinkButton:hover,
+:global(html[data-theme='light']) .intro a,
+:global(html[data-theme='light']) .quickLinks a,
+:global(html[data-theme='light']) .quickLinkButton {
+  color: #006b66;
+}
+
+:global(html[data-theme='light']) .tagline {
+  color: #006b66;
+}
+
+:global(html[data-theme='light']) .intro {
+  color: #3e515b;
+}
+
+:global(html[data-theme='light']) .intro::before {
+  color: #b44922;
+}
