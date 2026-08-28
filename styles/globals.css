@@ -110,6 +110,51 @@ blockquote {
   font-style: italic;
 }
 
+/* Warm studio board */
+html,
+body {
+  background: #f9f5eb;
+  color: #202c35;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+[aria-hidden="true"] {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Iowan Old Style, Palatino Linotype, Book Antiqua, Georgia, serif;
+}
+
+::selection {
+  background: #f3b63f;
+  color: #202c35;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #d95738;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 hr {
   border: none;
   border-top: 1px solid #e2e8f0;

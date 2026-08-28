@@ -259,6 +259,107 @@
   border-top: 1px solid #e2e8f0;
 }
 
+.container {
+  max-width: 1080px;
+  padding: 2.5rem 3rem;
+}
+
+.nav {
+  border-bottom: 2px solid #202c35;
+  margin-bottom: clamp(4rem, 8vw, 6rem);
+  padding-bottom: 1.25rem;
+}
+
+.navBrand a,
+.main h1,
+.main h2,
+.main h3,
+.resumeHeader h2,
+.writingItem h3,
+.experienceItem h4,
+.educationItem h4,
+.skillsSection h4 {
+  color: #202c35;
+}
+
+.navBrand a {
+  font-size: 1.2rem;
+}
+
+.navLinks {
+  gap: 1.5rem;
+}
+
+.navLinks a {
+  color: #202c35;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.main {
+  margin-bottom: 8rem;
+  max-width: 72ch;
+}
+
+.main h1 {
+  font-size: clamp(3.8rem, 8vw, 6.5rem);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 0.84;
+}
+
+.main h2 {
+  border-top: 2px solid #202c35;
+  font-size: 2rem;
+  margin-top: 4rem;
+  padding-top: 1.2rem;
+}
+
+.main h3 {
+  color: #d95738;
+}
+
+.subtitle {
+  color: #d95738;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.content p,
+.content ul,
+.content li,
+.resumeHeader p,
+.writingItem p,
+.educationItem p,
+.skillsSection p,
+.date {
+  color: #35434c !important;
+}
+
+.content a,
+.writingItem a {
+  color: #202c35;
+  text-decoration-color: #d95738;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+.writingItem,
+.resumeHeader {
+  border-bottom-color: #d8cfc0;
+}
+
+.placeholder {
+  background: #f0e8d7;
+  color: #657078;
+}
+
+.footer {
+  border-top: 2px solid #202c35;
+  color: #657078;
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 2rem 1.5rem;
