@@ -46,10 +46,10 @@ export default function Home() {
 
         <main className={styles.main}>
           <h1>Max Baehr</h1>
-          <p className={styles.tagline}>Product manager, platform launcher; great dinner guest.</p>
+          <h3 className={styles.tagline}>Product manager, platform launcher; great dinner guest.</h3>
 
           <section className={styles.intro}>
-            <h3>
+            <p>
               🪴 I'm a PM and builder with over 15 years of experience spanning advertising, martech, video
               workflow, devtools, and builder platforms; SMB to Enterprise deployments. I enjoy reading,{' '}
               <a href="https://meatboundary.substack.com/" target="_blank" rel="noopener noreferrer">writing</a>,
@@ -62,7 +62,7 @@ export default function Home() {
                 iOS app
               </a>
               , which worked pretty well until I throttled my AI keys and stopped paying for hosting.
-            </h3>
+            </p>
           </section>
 
           <section className={styles.quickLinks}>
