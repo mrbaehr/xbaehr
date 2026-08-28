@@ -259,6 +259,105 @@
   border-top: 1px solid #e2e8f0;
 }
 
+.container {
+  max-width: 1100px;
+  padding: 3.5rem 3rem 2.5rem;
+}
+
+.nav {
+  align-items: baseline;
+  border-bottom-color: #c9bda9;
+  margin-bottom: clamp(4rem, 8vw, 6rem);
+  padding-bottom: 1rem;
+}
+
+.navBrand a,
+.main h1,
+.main h2,
+.main h3,
+.resumeHeader h2 {
+  font-family: Georgia, Times, serif;
+}
+
+.navBrand a,
+.main h1,
+.main h2,
+.main h3,
+.resumeHeader h2 {
+  color: #26302c;
+  font-weight: 400;
+}
+
+.navLinks {
+  gap: 1.35rem;
+}
+
+.navLinks a {
+  color: #5e6255;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.main {
+  margin-bottom: 7rem;
+  max-width: 76ch;
+}
+
+.main h1 {
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  letter-spacing: -0.055em;
+  line-height: 0.9;
+}
+
+.main h2 {
+  font-size: 2rem;
+  margin-top: 4.5rem;
+}
+
+.main h3 {
+  color: #a55031;
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  color: #a55031;
+  font-family: Georgia, Times, serif;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.content p,
+.content ul,
+.content li,
+.resumeHeader p,
+.writingItem p,
+.educationItem p,
+.skillsSection p {
+  color: #40463d;
+}
+
+.content a,
+.writingItem a {
+  color: #8c412a;
+  text-decoration-color: #d8b56a;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+.writingItem,
+.resumeHeader {
+  border-bottom-color: #c9bda9;
+}
+
+.footer {
+  border-top-color: #c9bda9;
+  color: #747567;
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 2rem 1.5rem;

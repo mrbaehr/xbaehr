@@ -110,6 +110,43 @@ blockquote {
   font-style: italic;
 }
 
+/* Editorial reading room */
+html,
+body {
+  background: #f5f0e6;
+  color: #26302c;
+}
+
+body {
+  font-family: Georgia, Times, serif;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+[aria-hidden="true"] {
+  display: none;
+}
+
+::selection {
+  background: #d8b56a;
+  color: #1e2824;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #a55031;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 hr {
   border: none;
   border-top: 1px solid #e2e8f0;
