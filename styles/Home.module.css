@@ -154,6 +154,7 @@
   border-bottom: 1px solid #294555;
   margin-bottom: clamp(5rem, 12vw, 10rem);
   padding-bottom: 1.25rem;
+  gap: 1.25rem;
 }
 
 .navBrand a {
@@ -164,6 +165,7 @@
 
 .navLinks {
   gap: 1.5rem;
+  margin-left: auto;
 }
 
 .navLinks a,
@@ -267,6 +269,10 @@
     margin-bottom: 3rem;
   }
 
+  .navLinks {
+    margin-left: 0;
+  }
+
   .navBrand a {
     font-size: 1.1rem;
   }
@@ -314,7 +320,7 @@
 :global(html[data-theme='light']) .navLinks a,
 :global(html[data-theme='light']) .navLinkButton,
 :global(html[data-theme='light']) .footer {
-  color: #516873;
+  color: #2c3f49;
 }
 
 :global(html[data-theme='light']) .navLinks a:hover,
@@ -322,11 +328,11 @@
 :global(html[data-theme='light']) .intro a,
 :global(html[data-theme='light']) .quickLinks a,
 :global(html[data-theme='light']) .quickLinkButton {
-  color: #006b66;
+  color: #00514f;
 }
 
 :global(html[data-theme='light']) .tagline {
-  color: #006b66;
+  color: #00514f;
 }
 
 :global(html[data-theme='light']) .intro {
