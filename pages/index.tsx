@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Max Baehr | Product • Platform • Vibes</title>
+        <title>Max Baehr | Product Manager | Platform Launcher</title>
         <meta name="description" content="Product manager, platform thinker, tech enthusiast" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
